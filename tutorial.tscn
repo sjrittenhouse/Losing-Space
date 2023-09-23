@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dli4mt5kppmoy"]
+
+[ext_resource type="Texture2D" uid="uid://bg8ddmqg72nfv" path="res://tutorial.png" id="1_51go3"]
+[ext_resource type="Script" path="res://tutorial.gd" id="1_vvvpn"]
+
+[node name="tutorial" type="Node2D"]
+script = ExtResource("1_vvvpn")
+
+[node name="Tutorial" type="Sprite2D" parent="."]
+position = Vector2(80, 72)
+texture = ExtResource("1_51go3")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

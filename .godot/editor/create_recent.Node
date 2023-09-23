@@ -1,0 +1,15 @@
+RichTextLabel
+CanvasLayer
+Timer
+Area2D
+Node2D
+CollisionShape2D
+RigidBody2D
+StaticBody2D
+TextureRect
+Control
+Sprite2D
+CanvasModulate
+Camera2D
+AnimatedSprite2D
+CharacterBody2D

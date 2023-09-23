@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cso0npjwx1qxr"]
+
+[ext_resource type="Texture2D" uid="uid://b5fupacmno7i0" path="res://gameover.png" id="1_omeh0"]
+[ext_resource type="Script" path="res://game_over.gd" id="1_r1r8m"]
+[ext_resource type="Script" path="res://GameOverScore.gd" id="3_0toep"]
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource("1_r1r8m")
+
+[node name="Gameover" type="Sprite2D" parent="."]
+position = Vector2(80, 72)
+texture = ExtResource("1_omeh0")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true
+
+[node name="GameOverScore" type="RichTextLabel" parent="."]
+offset_left = 50.0
+offset_top = 87.0
+offset_right = 110.0
+offset_bottom = 127.0
+text = "SCORE: 80"
+script = ExtResource("3_0toep")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

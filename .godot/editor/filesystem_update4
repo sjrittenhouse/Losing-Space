@@ -1,0 +1,14 @@
+res://goal.tscn
+res://scanelines.gdshader
+res://game_over.tscn
+res://title_screen.tscn
+res://tutorial.tscn
+res://Gameboy.tscn
+res://main.tscn
+res://Global.gd
+res://boxcontroller.gd
+res://tutorial.gd
+res://game_over.gd
+res://title_screen.gd
+res://TimeLeft.gd
+res://GameOverScore.gd

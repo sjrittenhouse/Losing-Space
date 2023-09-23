@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bit8na1yap5rg"]
+
+[ext_resource type="Script" path="res://title_screen.gd" id="1_846xd"]
+[ext_resource type="Texture2D" uid="uid://bprdamlugvcmt" path="res://Title screen.png" id="1_i662q"]
+
+[node name="title_screen" type="Node2D"]
+script = ExtResource("1_846xd")
+
+[node name="TitleScreen" type="Sprite2D" parent="."]
+position = Vector2(80, 72)
+texture = ExtResource("1_i662q")
